@@ -1,37 +1,28 @@
-//------Read a single digit number and write the number in word using Case------//
-//------Generates Random number between o to 9------------//
-var randomNumber = Math.floor(Math.random() * 10);
+//------Read a Number and Display the week day (Sunday, Monday,...)------//
+//------Generates Random number-----------//
+var randomNumber = Math.floor(Math.random() * 10) % 7;
 //------Switch Case--------//
 switch (randomNumber) {
     case 0:
-        console.log("Zero");
+        console.log("Monday");
         break;
     case 1:
-        console.log("One");
+        console.log("Tuesday");
         break;
     case 2:
-        console.log("Two");
+        console.log("Wednesday");
         break;
     case 3:
-        console.log("Three");
+        console.log("Thursday");
         break;
     case 4:
-        console.log("Four");
+        console.log("Friday");
         break;
     case 5:
-        console.log("Five");
-        break;
-    case 6:
-        console.log("Six");
-        break;
-    case 7:
-        console.log("Seven");
-        break;
-    case 8:
-        console.log("Eight");
+        console.log("Saturday");
         break;
     default:
-        console.log("Nine");
+        console.log("Sunday");
         break;
 
 }
