@@ -1,30 +1,27 @@
 //------Read a Number and Display the week day (Sunday, Monday,...)------//
 //------Generates Random number-----------//
-var randomNumber = Math.floor(Math.random() * 10) % 7;
-//------Switch Case--------//
-switch (randomNumber) {
-    case 0:
-        console.log("Monday");
-        break;
+let num=8765;
+let rand=Math.floor(Math.random()*4)+1;
+switch(rand)
+{
     case 1:
-        console.log("Tuesday");
+        let thousand = (num /1000);
+        console.log("Thousand : " + Math.floor(thousand));
         break;
     case 2:
-        console.log("Wednesday");
+        let a=num%1000;
+        let hundred = a / 100;
+        console.log("Hundreds : " + Math.floor(hundred));
         break;
     case 3:
-        console.log("Thursday");
+        let b = num % 100;
+        let ten = b/ 10 ;
+        console.log("Tens : " + Math.floor(ten)) ;
         break;
     case 4:
-        console.log("Friday");
+        let c=num%10
+        let one = c / 1
+        console.log("Units : " + Math.floor(one));
         break;
-    case 5:
-        console.log("Saturday");
-        break;
-    default:
-        console.log("Sunday");
-        break;
-
 }
-
 
