@@ -1,27 +1,12 @@
-//------Read a Number and Display the week day (Sunday, Monday,...)------//
-//------Generates Random number-----------//
-let num=8765;
-let rand=Math.floor(Math.random()*4)+1;
-switch(rand)
-{
-    case 1:
-        let thousand = (num /1000);
-        console.log("Thousand : " + Math.floor(thousand));
-        break;
-    case 2:
-        let a=num%1000;
-        let hundred = a / 100;
-        console.log("Hundreds : " + Math.floor(hundred));
-        break;
-    case 3:
-        let b = num % 100;
-        let ten = b/ 10 ;
-        console.log("Tens : " + Math.floor(ten)) ;
-        break;
-    case 4:
-        let c=num%10
-        let one = c / 1
-        console.log("Units : " + Math.floor(one));
-        break;
-}
-
+//------Enter 3 Numbers do following arithmetic operation and find the one thatis maximum and minimum------//
+var a=20;
+var b=10;
+var c=5;
+var x=a+b*c;
+var y=c+a/b;
+var z=a%b+c;
+var t=a*b+c;
+const arr=[];
+arr.push(x,y,z,t);
+console.log("Maximum num : " + Math.max(...arr));
+console.log("Maximum num : " + Math.min(...arr));
